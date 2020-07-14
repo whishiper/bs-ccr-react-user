@@ -1,0 +1,9 @@
+{
+  "extends": "umi",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "jsx-a11y/href-no-hash": [0]
+  }
+}

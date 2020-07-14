@@ -1,0 +1,71 @@
+@import '~antd/lib/style/themes/default.less';
+
+.warpper {
+  height: 100%;
+}
+
+.header {
+  position: relative;
+  padding: 10px 0;
+}
+
+.help {
+  position: absolute;
+  right: 0;
+  top: 0;
+  // width: 60px;
+}
+
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_item_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.text {
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+}
+.ccr_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  height: auto;
+}
+
+
+@media screen and (max-width: @screen-md) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card_item_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .card_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+  }
+}

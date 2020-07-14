@@ -1,0 +1,60 @@
+@import '~antd/lib/style/themes/default.less';
+
+.card_set_from {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card_item_col_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.text {
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+}
+
+.copy {
+  cursor: pointer;
+}
+
+.no_bind_api {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.card_item_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  height: 120px;
+}
+
+@media screen and (max-width: @screen-md) {
+
+  .card_set_from {
+    display: flex;
+    justify-content: center;
+  }
+
+  .no_bind_api {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .card_item_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}

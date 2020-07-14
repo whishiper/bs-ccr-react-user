@@ -1,0 +1,49 @@
+
+.main {
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.warpper {
+  border: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+  padding: 10px 5px 20px;
+}
+
+.left,
+.right {
+  width: 60px;
+  text-align: right;
+}
+
+.group {
+  width: calc(~'100% - 120px');
+  height: 84px;
+  overflow: hidden;
+}
+
+.group_active {
+  height: 210px;
+  overflow: auto;
+}
+
+.but {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: calc(~'(100% - 70px)/7');
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.but_checked{
+  background: url('assets/yes.png') no-repeat!important;
+  background-position: bottom right!important;
+  border-color: #1890ff!important;
+  color: #1890ff!important;
+}

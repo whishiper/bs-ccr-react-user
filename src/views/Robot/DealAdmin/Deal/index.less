@@ -1,0 +1,124 @@
+@import '~antd/lib/style/themes/default.less';
+
+.but {
+  padding: 20px 0;
+  border-bottom: 1px dashed #d3d3d3;
+}
+
+.but a {
+  margin-right: 10px;
+}
+
+.but a:last-child {
+  margin-right: 0;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.list_empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+}
+
+.list_item {
+  width: calc(~"((100% - 45px)/4)");
+  margin-right: 15px;
+  margin-bottom: 15px;
+
+}
+
+.list_item:nth-child(4n) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: @screen-md) {
+  .list_item {
+    width: calc(~"((100%)/1)");
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+
+
+.warpper {
+  background: #fff;
+  margin: 0 24px;
+}
+
+.header {
+  margin: -24px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .2)
+}
+
+.tabs_container {
+  width: 98%;
+  background: #fff;
+  border: 1px solid #000;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.icon_warning {
+  color: #ffac38;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.assets_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  border-bottom: 1px solid #d3d3d3;
+  text-align: center;
+  background: #fff;
+  padding: 16px 0;
+  position: relative;
+}
+
+.assets_but {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(255, 255, 255, .8);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: @screen-md) {
+  .assets_info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .card-container .ant-tabs .ant-tabs-ink-bar {
+    height: 1px;
+  }
+}
+
+
+:global(.start_trade_card .ant-card-actions>li) {
+  margin: 0 !important;
+  // padding: 12px 0;
+}
